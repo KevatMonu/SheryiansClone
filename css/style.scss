@@ -1,0 +1,768 @@
+@font-face {
+  font-family: font1;
+  src: url(../assets/font/HelveticaNowDisplay-Bold_VMHV5twUMR_2SBNfxj1ry.woff2);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../assets/font/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2);
+}
+@font-face {
+  font-family: font3;
+  src: url(../assets/font/NeueMachina-Bold_WaMOsLX9Z9.woff2);
+}
+
+@font-face {
+  font-family: font4;
+  src: url(../assets/font/NeueMachina-Regular_DQCmjH1st.woff2);
+}
+
+@font-face {
+  font-family: font5;
+  src: url(../assets/font/NeueMachina-Light_gwWCZxVuQl.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cod-gray: #0c0c0c;
+  --mercury: #e9e9e9;
+  --black: #000000;
+  --gray-950: #121212;
+  --Shark: #1e1e1e;
+  --fuscous-gray: #4f4f4f;
+  --boulder: #7c7c7c;
+  --cod-gray-200: #d1d1d1;
+  --gray-86: #dbdbdb;
+  --Silver-Chalice: #b3b3b3;
+  --white: #ffffff;
+  --Wild-Sand: #f4f4f4;
+  --background-color: #0c0c0c;
+  --ternary-gray-color: #212121;
+  --caribbean-green: #24cfa6;
+  --bright-green: #27dfb3;
+  --Lochinvar: #428e7c;
+  --error-color: #882727;
+  --main-horizontal-padding: 4.9rem;
+  --text-color: var(--mercury);
+  --ui-element-color: #2c2c2c;
+  --ui-element-secondary-color: #171717;
+  --ui-element-ternary-color: #1d1d1d;
+  --ui-element-highlight-color: var(--gray-950);
+  --accent-color: var(--caribbean-green);
+  --sub-text-color: #9e9e9e;
+  --form-input-border: #3c3c3c;
+  --link-color: #0084ff;
+  --discord-color: #7b40ff;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  --webkit-scrollbar-width: none;
+  scrollbar-width: none;
+  background-color: var(--cod-gray);
+  color: var(--mercury);
+  overflow-x: hidden;
+}
+
+/* Nav Section */
+nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.6rem;
+
+  .nav1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.45rem;
+
+    .log {
+      width: 2.5vw;
+      height: 2.5vw;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    h1 {
+      font-family: "font4";
+      font-weight: 100;
+      font-size: 0.9rem;
+    }
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.7rem;
+    list-style: none;
+    i {
+      display: none;
+    }
+    li {
+      a {
+        text-decoration: none;
+        font-family: "font2";
+        font-size: 0.9rem;
+        color: var(--mercury);
+      }
+
+      #sign-in {
+        font-weight: 600;
+        border: 0.2px solid #27dfb3;
+        padding: 0.36rem 0.99rem 0.45rem 0.99rem;
+        border-radius: 0.18rem;
+        background-color: var(--caribbean-green);
+      }
+    }
+  }
+}
+
+//Hero Section
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
+  background-image: url();
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.15rem;
+    position: relative;
+    margin-top: 4rem;
+    h1 {
+      font-family: "font5";
+      font-size: 5rem;
+      font-weight: 100;
+      text-align: center;
+      line-height: 0.9;
+
+      span {
+        color: var(--caribbean-green);
+      }
+
+      .good {
+        font-style: italic;
+        color: var(--mercury);
+      }
+    }
+
+    .course-btn {
+      font-family: "font2";
+      font-size: 1.35rem;
+      font-weight: 500;
+      padding: 0.45rem 1.8rem;
+      border-radius: 0.45rem;
+      background-color: var(--caribbean-green);
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .side-text {
+      font-family: "font2";
+      font-size: 0.9rem;
+      width: 12.6rem;
+      text-align: left;
+      font-weight: 300;
+      line-height: 1.2em;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: translate(80%, -60%);
+
+      .highlight {
+        color: var(--caribbean-green);
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    padding-top: 3rem;
+    gap: 8rem;
+
+    .b1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.27rem;
+
+      h1 {
+        font-family: "font1";
+      }
+
+      p {
+        font-family: "font5";
+        font-weight: 100;
+        font-size: 1.08rem;
+      }
+    }
+  }
+}
+
+// YouTube Sectio
+
+#youtube-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: "font4";
+    font-size: 2.65rem;
+    line-height: 1;
+    font-weight: 500;
+    padding-top: 8rem;
+    text-align: center;
+    margin-bottom: 4.5rem;
+    .highlight {
+      color: var(--caribbean-green);
+    }
+  }
+
+  .video-section {
+    width: 60%;
+    height: 33.98vw;
+    margin: auto;
+    border-radius: 1rem;
+
+    overflow: hidden;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 1rem;
+      background-position: center;
+    }
+  }
+
+  .youtube-btn {
+    text-align: center;
+    font-family: "font2";
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding: 0.8rem 3rem;
+    margin: 4.1rem 0 8rem 0;
+    border-radius: 0.45rem;
+    background-color: var(--caribbean-green);
+    color: var(--black);
+    text-decoration: none;
+  }
+}
+
+// Courses Section
+
+#Course {
+  width: 100%;
+  height: 190vh;
+  padding: 0 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+  h1 {
+    font-family: "font5";
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
+
+  .course-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    .course-card-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+
+      .card-btn {
+        width: 100%;
+        font-family: "font1";
+        font-size: 1.55rem;
+        font-weight: 200;
+        text-decoration: none;
+        text-align: center;
+        color: var(--cod-gray);
+        border-radius: 0.3rem;
+        background-color: var(--caribbean-green);
+        padding: 0.4rem 0;
+      }
+      .course-card {
+        width: 21.15vw;
+        height: 31vw;
+        border-radius: 1rem;
+        background-color: var(--ui-element-secondary-color);
+        border: none;
+
+        .card-img {
+          width: 21.15vw;
+          height: 11.9vw;
+          margin-bottom: 1.1rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+          }
+        }
+
+        .card-info {
+          padding: 0 1.5rem;
+          display: flex;
+          flex-direction: column;
+          .card-tittle {
+            font-family: "font2";
+            font-size: 1.45rem;
+          }
+          .card-button {
+            display: flex;
+            margin: 0.8rem 0 5rem 0;
+            gap: 1rem;
+
+            a {
+              font-family: "font2";
+              text-decoration: none;
+              font-size: 1rem;
+              text-transform: uppercase;
+              padding: 0.2rem 0.8rem 0.3rem 0.8rem;
+              border-radius: 0.2rem;
+              background-color: var(--ui-element-color);
+              color: var(--mercury);
+            }
+            .live {
+              background-color: var(--error-color);
+            }
+          }
+          .btn1 {
+            margin-bottom: 6.7rem;
+          }
+
+          .btn3 {
+            margin-bottom: 8.6rem;
+          }
+
+          .btn5,
+          .btn6 {
+            margin-bottom: 8.6rem;
+          }
+
+          .btn7,
+          .btn8 {
+            margin-bottom: 7rem;
+          }
+          .card-price {
+            display: flex;
+            flex-direction: column;
+            p {
+              font-family: "font2";
+              font-size: 1rem;
+              color: var(--caribbean-green);
+              margin-bottom: 0.5rem;
+            }
+            .amount {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .price {
+                display: flex;
+                gap: 1.1rem;
+                align-items: center;
+                h1 {
+                  font-family: "font2";
+                  font-size: 1.5rem;
+                  font-weight: 500;
+                }
+                h2 {
+                  font-family: "font2";
+                  font-size: 1.1rem;
+                  font-weight: 500;
+                  text-decoration: line-through;
+                  color: var(--boulder);
+                }
+              }
+              .discount {
+                font-family: "font2";
+                text-transform: uppercase;
+                font-size: 0.85rem;
+                color: var(--cod-gray);
+                background-color: var(--white);
+                padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+                border-radius: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Company Section
+
+#Company {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  h1 {
+    font-family: "font5";
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1;
+    padding-top: 3rem;
+    .highlight {
+      color: var(--caribbean-green);
+    }
+  }
+  .company-con {
+    width: 80vw;
+    height: 18vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .company-btn {
+    font-family: "font1";
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-radius: 0.2rem;
+    padding: 0.4rem 3rem 0.5rem 3rem;
+    border: none;
+    color: var(--cod-gray);
+    text-decoration: none;
+    background-color: var(--caribbean-green);
+  }
+}
+
+#footer {
+  width: 100%;
+  height: 80vh;
+  padding: 0 3rem;
+  .foot1 {
+    width: 100%;
+    height: 68vh;
+    border-top: 1px solid var(--form-input-border);
+    border-bottom: 1px solid var(--form-input-border);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    .foot-img {
+      width: 3.8vw;
+      height: 3.8vw;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .foot-item {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      p {
+        font-family: "font2";
+        font-size: 1rem;
+      }
+      .icon {
+        display: flex;
+        gap: 2rem;
+        i {
+          font-size: 1.6rem;
+        }
+      }
+      h1 {
+        font-size: 1rem;
+        font-family: "font1";
+
+        text-transform: uppercase;
+      }
+      li {
+        font-family: "font2";
+        font-size: 0.9rem;
+        font-weight: 100;
+        list-style: none;
+        span {
+          font-weight: 900;
+        }
+        cursor: pointer;
+      }
+      li:hover {
+        color: var(--caribbean-green);
+      }
+    }
+  }
+
+  .foot2 {
+    font-family: "font1";
+    font-size: 0.9rem;
+    padding-top: 1.4rem;
+    text-align: center;
+  }
+}
+
+//Responsive ------------**--
+
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: 10vh;
+    padding: 0 1rem;
+
+    .nav1 {
+      gap: 1rem;
+
+      .log {
+        width: 6vw;
+        height: 6vw;
+      }
+
+      h1 {
+        font-family: "font4";
+        font-weight: 100;
+        font-size: 0.8rem;
+      }
+    }
+
+    .nav2 {
+      i {
+        font-size: 1.3rem;
+        display: block;
+      }
+      li {
+        display: none;
+      }
+    }
+  }
+
+  #hero {
+    height: 76vh;
+    gap: 0.8rem;
+
+    .middle {
+      gap: 3.15rem;
+      margin-top: 8rem;
+      h1 {
+        font-size: 3.2rem;
+        br {
+          display: none;
+        }
+      }
+
+      .side-text {
+        display: none;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 2.5rem;
+      .b1 {
+        h1 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  #youtube-section {
+    h1 {
+      font-size: 1.3rem;
+      padding-top: 4rem;
+      margin-bottom: 4rem;
+      br {
+        display: none;
+      }
+    }
+
+    .video-section {
+      width: 90%;
+      height: 50vw;
+      border-radius: 0.5rem;
+      iframe {
+        border-radius: 0.5rem;
+      }
+    }
+
+    .youtube-btn {
+      font-size: 1.2rem;
+      padding: 0.4rem 1rem;
+      margin: 2rem 0 5rem 0;
+      border-radius: 0.3rem;
+    }
+  }
+
+  #Course {
+    padding: 0 1rem;
+    gap: 2rem;
+    height: 90vh;
+
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    .course-container {
+      display: flex;
+      gap: 0.8rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 1rem;
+      -webkit-overflow-scrolling: touch;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .course-card-btn {
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1em;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+
+        .course-card {
+          width: 80.9vw;
+          height: 105vw;
+
+          .card-img {
+            width: 80.9vw;
+            height: 45vw;
+            margin-bottom: 1.1rem;
+          }
+
+          .card-info {
+            .card-tittle {
+              font-family: "font2";
+              font-size: 1rem;
+            }
+
+            .card-button {
+              display: flex;
+              margin: 0.8rem 0 5rem 0;
+              gap: 1rem;
+            }
+
+            .btn1 {
+              margin-bottom: 5rem;
+            }
+
+            .btn3 {
+              margin-bottom: 8.6rem;
+            }
+
+            .btn5,
+            .btn6 {
+              margin-bottom: 8.6rem;
+            }
+
+            .btn7,
+            .btn8 {
+              margin-bottom: 6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #Company {
+    width: 100%;
+    height: 50vh;
+    gap: 3rem;
+
+    h1 {
+      font-size: 2rem;
+      padding-top: 2rem;
+      br {
+        display: none;
+      }
+    }
+    .company-con {
+      width: 85vw;
+      height: 30vw;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .company-btn {
+      display: none;
+    }
+  }
+
+  #footer {
+    height: 140vh;
+    padding: 0 1rem;
+    .foot1 {
+      height: 135vh;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-top: 6rem;
+      .foot-img {
+        width:12vw;
+        height:12vw;
+      }
+      .foot-item {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        .icon {
+          gap: 1.5rem;
+         margin-bottom: 2rem;
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .foot2 {
+      font-family: "font1";
+      font-size: 0.9rem;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  }
+}

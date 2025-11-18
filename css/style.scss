@@ -536,7 +536,7 @@ nav {
 
 //Responsive ------------**--
 
-@media (max-width: 600px) {
+@media (max-width: 380px) {
   nav {
     width: 100%;
     height: 10vh;
@@ -629,81 +629,85 @@ nav {
     }
   }
 
-  #Course {
-    padding: 0 1rem;
-    gap: 2rem;
-    height: 90vh;
+#Course {
+  padding: 0 1rem;
+  gap: 2rem;
+  height: 90vh;
 
-    h1 {
-      font-size: 1.1rem;
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .course-container {
+    width: 100%;               
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    overflow-y: hidden;         
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
     }
 
-    .course-container {
+    .course-card-btn {
+      white-space: nowrap;
       display: flex;
-      gap: 0.8rem;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding-bottom: 1rem;
-      -webkit-overflow-scrolling: touch;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1em;
+      flex: 0 0 80.9vw;          
+      scroll-snap-align: start;
 
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      .course-card {
+        width: 100%;           
+        height: 105vw;
 
-      .course-card-btn {
-        white-space: nowrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1em;
-        flex: 0 0 auto;
-        scroll-snap-align: start;
+        .card-img {
+          width: 100%;          
+          height: 45vw;
+          margin-bottom: 1.1rem;
+        }
 
-        .course-card {
-          width: 80.9vw;
-          height: 105vw;
-
-          .card-img {
-            width: 80.9vw;
-            height: 45vw;
-            margin-bottom: 1.1rem;
+        .card-info {
+          .card-tittle {
+            font-family: "font2";
+            font-size: 1rem;
           }
 
-          .card-info {
-            .card-tittle {
-              font-family: "font2";
-              font-size: 1rem;
-            }
+          .card-button {
+            display: flex;
+            margin: 0.8rem 0 5rem 0;
+            gap: 1rem;
+          }
 
-            .card-button {
-              display: flex;
-              margin: 0.8rem 0 5rem 0;
-              gap: 1rem;
-            }
+          .btn1 {
+            margin-bottom: 5rem;
+          }
 
-            .btn1 {
-              margin-bottom: 5rem;
-            }
+          .btn3 {
+            margin-bottom: 5rem;
+          }
 
-            .btn3 {
-              margin-bottom: 8.6rem;
-            }
+          .btn5,
+          .btn6 {
+            margin-bottom: 5rem;
+          }
 
-            .btn5,
-            .btn6 {
-              margin-bottom: 8.6rem;
-            }
-
-            .btn7,
-            .btn8 {
-              margin-bottom: 6rem;
-            }
+          .btn7,
+          .btn8 {
+            margin-bottom: 5rem;
           }
         }
       }
     }
   }
+}
+
+
 
   #Company {
     width: 100%;
@@ -737,6 +741,243 @@ nav {
     padding: 0 1rem;
     .foot1 {
       height: 135vh;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-top: 6rem;
+      .foot-img {
+        width:12vw;
+        height:12vw;
+      }
+      .foot-item {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        .icon {
+          gap: 1.5rem;
+         margin-bottom: 2rem;
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .foot2 {
+      font-family: "font1";
+      font-size: 0.9rem;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  }
+}
+
+
+
+@media (min-width: 381px ) and (max-width :440px) {
+  nav {
+    width: 100%;
+    height: 10vh;
+    padding: 0 1rem;
+
+    .nav1 {
+      gap: 1rem;
+
+      .log {
+        width: 6vw;
+        height: 6vw;
+      }
+
+      h1 {
+        font-family: "font4";
+        font-weight: 100;
+        font-size: 0.8rem;
+      }
+    }
+
+    .nav2 {
+      i {
+        font-size: 1.3rem;
+        display: block;
+      }
+      li {
+        display: none;
+      }
+    }
+  }
+
+  #hero {
+    height: 60vh;
+    gap: 0.8rem;
+
+    .middle {
+      gap: 3.15rem;
+      margin-top: 8rem;
+      h1 {
+        font-size: 3.2rem;
+        br {
+          display: none;
+        }
+      }
+
+      .side-text {
+        display: none;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 2.5rem;
+      .b1 {
+        h1 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  #youtube-section {
+    h1 {
+      font-size: 1.3rem;
+      padding-top: 2.5rem;
+      margin-bottom: 4rem;
+      br {
+        display: none;
+      }
+    }
+
+    .video-section {
+      width: 90%;
+      height: 50vw;
+      border-radius: 0.5rem;
+      iframe {
+        border-radius: 0.5rem;
+      }
+    }
+
+    .youtube-btn {
+      font-size: 1.2rem;
+      padding: 0.4rem 1rem;
+      margin: 2rem 0 5rem 0;
+      border-radius: 0.3rem;
+    }
+  }
+
+#Course {
+  padding: 0 1rem;
+  gap: 2rem;
+  height: 70vh;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .course-container {
+    width: 100%;               
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    overflow-y: hidden;         
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .course-card-btn {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1em;
+      flex: 0 0 80.9vw;          
+      scroll-snap-align: start;
+
+      .course-card {
+        width: 100%;           
+        height: 105vw;
+
+        .card-img {
+          width: 100%;          
+          height: 45vw;
+          margin-bottom: 1.1rem;
+        }
+
+        .card-info {
+          .card-tittle {
+            font-family: "font2";
+            font-size: 1rem;
+          }
+
+          .card-button {
+            display: flex;
+            margin: 0.8rem 0 5rem 0;
+            gap: 1rem;
+          }
+
+          .btn1 {
+            margin-bottom: 5rem;
+          }
+
+          .btn3 {
+            margin-bottom: 5rem;
+          }
+
+          .btn5,
+          .btn6 {
+            margin-bottom: 5rem;
+          }
+
+          .btn7,
+          .btn8 {
+            margin-bottom: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+  #Company {
+    width: 100%;
+    height: 35vh;
+    gap: 3rem;
+
+    h1 {
+      font-size: 2rem;
+      padding-top: 2rem;
+      br {
+        display: none;
+      }
+    }
+    .company-con {
+      width: 85vw;
+      height: 30vw;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .company-btn {
+      display: none;
+    }
+  }
+
+  #footer {
+    height: 100vh;
+    padding: 0 1rem;
+    .foot1 {
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: start;

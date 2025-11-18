@@ -502,7 +502,7 @@ nav .nav2 li #sign-in {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 380px) {
   nav {
     width: 100%;
     height: 10vh;
@@ -585,9 +585,11 @@ nav .nav2 li #sign-in {
     font-size: 1.1rem;
   }
   #Course .course-container {
+    width: 100%;
     display: flex;
     gap: 0.8rem;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
     -webkit-overflow-scrolling: touch;
@@ -602,15 +604,15 @@ nav .nav2 li #sign-in {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1em;
-    flex: 0 0 auto;
+    flex: 0 0 80.9vw;
     scroll-snap-align: start;
   }
   #Course .course-container .course-card-btn .course-card {
-    width: 80.9vw;
+    width: 100%;
     height: 105vw;
   }
   #Course .course-container .course-card-btn .course-card .card-img {
-    width: 80.9vw;
+    width: 100%;
     height: 45vw;
     margin-bottom: 1.1rem;
   }
@@ -627,15 +629,15 @@ nav .nav2 li #sign-in {
     margin-bottom: 5rem;
   }
   #Course .course-container .course-card-btn .course-card .card-info .btn3 {
-    margin-bottom: 8.6rem;
+    margin-bottom: 5rem;
   }
   #Course .course-container .course-card-btn .course-card .card-info .btn5,
   #Course .course-container .course-card-btn .course-card .card-info .btn6 {
-    margin-bottom: 8.6rem;
+    margin-bottom: 5rem;
   }
   #Course .course-container .course-card-btn .course-card .card-info .btn7,
   #Course .course-container .course-card-btn .course-card .card-info .btn8 {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
   #Company {
     width: 100%;
@@ -670,6 +672,203 @@ nav .nav2 li #sign-in {
   }
   #footer .foot1 {
     height: 135vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 6rem;
+  }
+  #footer .foot1 .foot-img {
+    width: 12vw;
+    height: 12vw;
+  }
+  #footer .foot1 .foot-item {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #footer .foot1 .foot-item .icon {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  #footer .foot1 .foot-item .icon i {
+    font-size: 1.2rem;
+  }
+  #footer .foot2 {
+    font-family: "font1";
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+@media (min-width: 381px) and (max-width: 440px) {
+  nav {
+    width: 100%;
+    height: 10vh;
+    padding: 0 1rem;
+  }
+  nav .nav1 {
+    gap: 1rem;
+  }
+  nav .nav1 .log {
+    width: 6vw;
+    height: 6vw;
+  }
+  nav .nav1 h1 {
+    font-family: "font4";
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+  nav .nav2 i {
+    font-size: 1.3rem;
+    display: block;
+  }
+  nav .nav2 li {
+    display: none;
+  }
+  #hero {
+    height: 60vh;
+    gap: 0.8rem;
+  }
+  #hero .middle {
+    gap: 3.15rem;
+    margin-top: 8rem;
+  }
+  #hero .middle h1 {
+    font-size: 3.2rem;
+  }
+  #hero .middle h1 br {
+    display: none;
+  }
+  #hero .middle .side-text {
+    display: none;
+  }
+  #hero .bottom {
+    display: flex;
+    gap: 2.5rem;
+  }
+  #hero .bottom .b1 h1 {
+    font-size: 1.1rem;
+  }
+  #hero .bottom .b1 p {
+    font-size: 0.85rem;
+  }
+  #youtube-section h1 {
+    font-size: 1.3rem;
+    padding-top: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  #youtube-section h1 br {
+    display: none;
+  }
+  #youtube-section .video-section {
+    width: 90%;
+    height: 50vw;
+    border-radius: 0.5rem;
+  }
+  #youtube-section .video-section iframe {
+    border-radius: 0.5rem;
+  }
+  #youtube-section .youtube-btn {
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    margin: 2rem 0 5rem 0;
+    border-radius: 0.3rem;
+  }
+  #Course {
+    padding: 0 1rem;
+    gap: 2rem;
+    height: 70vh;
+  }
+  #Course h1 {
+    font-size: 1.5rem;
+  }
+  #Course .course-container {
+    width: 100%;
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  #Course .course-container::-webkit-scrollbar {
+    display: none;
+  }
+  #Course .course-container .course-card-btn {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1em;
+    flex: 0 0 80.9vw;
+    scroll-snap-align: start;
+  }
+  #Course .course-container .course-card-btn .course-card {
+    width: 100%;
+    height: 105vw;
+  }
+  #Course .course-container .course-card-btn .course-card .card-img {
+    width: 100%;
+    height: 45vw;
+    margin-bottom: 1.1rem;
+  }
+  #Course .course-container .course-card-btn .course-card .card-info .card-tittle {
+    font-family: "font2";
+    font-size: 1rem;
+  }
+  #Course .course-container .course-card-btn .course-card .card-info .card-button {
+    display: flex;
+    margin: 0.8rem 0 5rem 0;
+    gap: 1rem;
+  }
+  #Course .course-container .course-card-btn .course-card .card-info .btn1 {
+    margin-bottom: 5rem;
+  }
+  #Course .course-container .course-card-btn .course-card .card-info .btn3 {
+    margin-bottom: 5rem;
+  }
+  #Course .course-container .course-card-btn .course-card .card-info .btn5,
+  #Course .course-container .course-card-btn .course-card .card-info .btn6 {
+    margin-bottom: 5rem;
+  }
+  #Course .course-container .course-card-btn .course-card .card-info .btn7,
+  #Course .course-container .course-card-btn .course-card .card-info .btn8 {
+    margin-bottom: 5rem;
+  }
+  #Company {
+    width: 100%;
+    height: 35vh;
+    gap: 3rem;
+  }
+  #Company h1 {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  #Company h1 br {
+    display: none;
+  }
+  #Company .company-con {
+    width: 85vw;
+    height: 30vw;
+  }
+  #Company .company-con img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #Company .company-btn {
+    display: none;
+  }
+  #footer {
+    height: 100vh;
+    padding: 0 1rem;
+  }
+  #footer .foot1 {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: start;
